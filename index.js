@@ -1,7 +1,11 @@
-export const createTheme = (name) => ({ addVariant, e }) {
-      addVariant(`${name}`, ({ modifySelectors, separator }) => {
-        modifySelectors(({ className }) => {
-          return `body.${name} .${e(`${name}${separator}${className}`)}`
+module.exports = {
+  createTheme: function (name) {
+    return function ({ addVariant, e }) {
+      addVariant(name, function ({ modifySelectors, separator }) {
+        modifySelectors(function ({ className }) {
+          return 'body.' + name + ' ' + '.' + e(name + separator + className)
         })
       })
     }
+  },
+}
