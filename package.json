@@ -1,0 +1,15 @@
+{
+  "name": "tailwind-create-theme",
+  "version": "1.0.0",
+  "description": "create a custom tailwind theme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "cooking_bird",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cookingBird/tailwind-create-theme"
+  }
+}
